@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   pages: true,
-  modules: ['@nuxt/ui', 'nuxt-icon', '@pinia/nuxt', '@pinia-plugin-persistedstate/nuxt',],
+  modules: ['@nuxt/ui', 'nuxt-icon', '@pinia/nuxt', '@pinia-plugin-persistedstate/nuxt','@nuxt/image',],
   app: {
     // pageTransition: { name: 'page', mode: 'out-in' },
     head: {
