@@ -4,7 +4,7 @@
 			<div class="flex justify-center">
 				<p>Logo</p>
 			</div>
-			<div class="flex gap-6 pr-8">
+			<div class="flex gap-14 pr-8">
 				<p class="text-lg font-bold">Inicio</p>
 				<p class="text-lg font-bold">Menu 2</p>
 				<p class="text-lg font-bold">Menu 3</p>

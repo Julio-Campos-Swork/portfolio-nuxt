@@ -1,12 +1,6 @@
 <template>
 	<NuxtLayout>
-		<UContainer>
-			<UCard :ui="ui">
-				<UButton @click="$useTestStore.counterPlus()">Button</UButton>
-				<p>{{ $useTestStore.counter }}</p>
-				<Icon name="uil:github" color="white" size="50" />
-			</UCard>
-		</UContainer>
+		<GeneralHero />
 	</NuxtLayout>
 </template>
 
