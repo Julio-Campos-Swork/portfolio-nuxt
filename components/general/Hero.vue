@@ -18,7 +18,7 @@
 					</span>
 				</p>
 				<p class="typeWrite">
-					Efecto maquina de escribir brutal<span class="cursor text-white">|</span>
+					Efecto maquina de escribir brutal<span class="cursor">|</span>
 				</p>
 			</div>
 			<div class="flex flex-col">
@@ -32,17 +32,18 @@
 
 <style scoped>
 	.typeWrite {
-		font-size: xx-large;
+		font-size: 2rem;
 		display: block;
 		font-family: monospace;
 		white-space: nowrap; /* los espacios en blanco no rompen la línea */
-		width: 20ch; /* el ancho será el número de caracteres que tiene nuestra línea */
-		animation: escribiendo 3s steps(30) infinite alternate;
+		width: 28ch; /* el ancho será el número de caracteres que tiene nuestra línea */
+		animation: escribiendo 3s steps(28) infinite alternate;
 		overflow: hidden;
 	}
 
 	.cursor {
 		animation: 0.6s parpadeo-cursor infinite;
+		color: white;
 	}
 
 	@keyframes escribiendo {
