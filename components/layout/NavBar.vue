@@ -40,7 +40,6 @@
 	)
 
 	const actionMenu = () => {
-		console.log('valor')
 		if (btnMenu.value.includes('rotate-90')) {
 			btnMenu.value = btnMenu.value.replace('rotate-90', ' ')
 			lateral.value = lateral.value.replace('translate-x-0', 'translate-x-full')
