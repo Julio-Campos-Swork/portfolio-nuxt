@@ -1,6 +1,8 @@
 <template>
 	<NuxtLayout>
 		<GeneralHero />
+
+		<GeneralSkills />
 	</NuxtLayout>
 </template>
 

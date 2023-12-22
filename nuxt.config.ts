@@ -2,19 +2,28 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   pages: true,
-  devServer:{
-host:'0.0.0.0'
+  devServer: {
+    host: '0.0.0.0',
   },
-  modules: ['@nuxt/ui', 'nuxt-icon', '@pinia/nuxt', '@pinia-plugin-persistedstate/nuxt','@nuxt/image',],
+  alias:{
+    "@": "/"
+  },
+  modules: [
+    '@nuxt/ui',
+    'nuxt-icon',
+    '@pinia/nuxt',
+    '@pinia-plugin-persistedstate/nuxt',
+    '@nuxt/image',
+  ],
   app: {
     // pageTransition: { name: 'page', mode: 'out-in' },
     head: {
       title: 'Portfolio',
-      meta:[
+      meta: [
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { name: 'description', content: 'Portfolio' },
-        {charset: 'utf-8'},
+        { charset: 'utf-8' },
       ],
     },
-  }
+  },
 })

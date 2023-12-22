@@ -1,27 +1,29 @@
 <template>
-	<UContainer>
+	<UContainer class="border-b-[1px] border-black dark:border-blue-400 pt-2 lg:pt-12 pb-6">
 		<div class="grid grid-cols-1 md:grid-cols-2">
 			<div class="flex flex-col">
-				<h1 class="text-center py-8 text-lg md:text-4xl font-bold">
+				<h1 class="text-center lg:py-8 py-2 text-lg lg:text-4xl font-bold">
 					<span
-						class="bg-gradient-to-r from-purple-400 to-cyan-300 text-transparent bg-clip-text"
+						class="bg-gradient-to-r from-purple-600 to-blue-500 text-transparent bg-clip-text"
 					>
 						Texto de bienvenida.
 					</span>
 				</h1>
 				<!-- Utilizando un degradado de izquierda a derecha en el texto -->
-				<p class="text-lg md:text-2xl text-center">
+				<p class="text-base lg:text-2xl text-center">
 					<span
-						class="bg-gradient-to-r from-blue-500 to-green-500 text-transparent bg-clip-text"
+						class="bg-gradient-to-r from-blue-500 to-purple-600 text-transparent bg-clip-text"
 					>
 						Subtexto de bienvenida.
 					</span>
 				</p>
-				<p class="typeWrite">
-					Efecto maquina de escribir brutal<span class="cursor">|</span>
-				</p>
+				<div class="flex justify-center">
+					<p class="typeWrite text-lg md:text-xl lg:text-3xl py-6">
+						Desarrollador Web<span class="cursor text-lg md:text-xl lg:text-3xl">|</span>
+					</p>
+				</div>
 			</div>
-			<div class="flex flex-col">
+			<div class="flex flex-col justify-center">
 				<NuxtPicture format="avif,webp" src="/img/hero.png" />
 			</div>
 		</div>
@@ -32,12 +34,11 @@
 
 <style scoped>
 	.typeWrite {
-		font-size: 2rem;
 		display: block;
 		font-family: monospace;
 		white-space: nowrap; /* los espacios en blanco no rompen la línea */
-		width: 28ch; /* el ancho será el número de caracteres que tiene nuestra línea */
-		animation: escribiendo 3s steps(28) infinite alternate;
+		width: 18ch; /* el ancho será el número de caracteres que tiene nuestra línea */
+		animation: escribiendo 3s steps(18) infinite alternate;
 		overflow: hidden;
 	}
 
@@ -48,7 +49,7 @@
 
 	@keyframes escribiendo {
 		from {
-			width: 100%;
+			width: 50%;
 		}
 		to {
 			width: 0;
